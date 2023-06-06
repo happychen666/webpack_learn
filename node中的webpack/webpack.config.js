@@ -14,8 +14,8 @@ module.exports = {
     // mode: "development",
     // 构建后的文件名
     // filename: "bundle.js",
-    // 构建后文件的存放目录
-    path: path.resolve(__dirname, "./build"),
+    // 构建后文件的存放目录，就是文件打包之后的物理存放位置
+    path: path.resolve(__dirname, "./build/js"),
   },
   module: {
     rules: [
@@ -36,7 +36,7 @@ module.exports = {
               // 构建文件名和目录设置, [name]和[ext]是占位符
               esModule: false,
               // 是否启用ES6模块系统，本项目未启用
-              publicPath: "build", // 输出的根目录
+              //   publicPath: "build", // 输出的根目录没懂这个
             },
           },
         ],

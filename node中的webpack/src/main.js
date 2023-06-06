@@ -1,6 +1,6 @@
 require("./main.css");
 // 加载logo.gif文件
-const logo = require("./logo.png");
+const logo = require("./images/logo.png");
 document.querySelector("#btn").addEventListener(
   "click",
   function () {
