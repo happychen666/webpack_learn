@@ -10,7 +10,12 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: "replace-loader",
+        use: [
+          {
+            loader: "replace-loader",
+            options: { text: "Webpack100分" },
+          },
+        ],
       },
     ],
   },
